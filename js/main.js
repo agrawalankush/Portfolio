@@ -10,6 +10,7 @@
  */
 {
 	setTimeout(() => document.body.classList.add('render'), 60);
+	setInterval(() => { setRandomPhoto(); }, 2500);
 	const navdemos = Array.from(document.querySelectorAll('nav.demos > .demo'));
 	const total = navdemos.length;
 	const current = navdemos.findIndex(el => el.classList.contains('demo--current'));
@@ -24,15 +25,20 @@
 	document.addEventListener('keydown', (ev) => {
 		const keyCode = ev.keyCode || ev.which;
 		let linkEl;
-		if ( keyCode === 37 ) {
-			linkEl = current > 0 ? navdemos[current-1] : navdemos[total-1];
+		if (keyCode === 37) {
+			linkEl = current > 0 ? navdemos[current - 1] : navdemos[total - 1];
 		}
-		else if ( keyCode === 39 ) {
-			linkEl = current < total-1 ? navdemos[current+1] : navdemos[0];
+		else if (keyCode === 39) {
+			linkEl = current < total - 1 ? navdemos[current + 1] : navdemos[0];
 		}
 		else {
 			return false;
 		}
 		navigate(linkEl);
 	});
+
+	function setRandomPhoto() {
+		let num = Math.floor(Math.random() * 10) + 1;
+		document.getElementById("propic").src = `./img/face${num}.jpeg`;
+	}
 }
