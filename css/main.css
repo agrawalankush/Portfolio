@@ -67,6 +67,9 @@
 		font-size: 8vw;
 		text-shadow: 2px 2px 0px #0F0F0F;
 	}
+	.content__title.resume__title {
+      display: none;
+	}
 	.content__age,
 	.content__location {
 		font-size: 1rem;
@@ -289,9 +292,9 @@
 	object-fit: fill;
   }
   .resume-container {
-	margin-top:4px; 
+	margin-top:8px; 
 	box-shadow: 5px 10px 5px #000000;
   }
   .resume-img {
-	width: 30vw;
+	width: 35vw;
   }
