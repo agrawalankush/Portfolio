@@ -321,7 +321,7 @@
   
   .random-stuff-container-items img:hover {
 	-webkit-transform: scale(1.25, 1.25);
-	transform: scale(1.25, 1.25); 
+	transform: scale(1.2, 1.2); 
   }
   .random-stuff-container-items img:hover::after {
 	opacity: 1;
