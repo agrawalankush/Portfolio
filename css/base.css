@@ -139,11 +139,7 @@ main {
 	text-align: center;
 }
 
-.demos {
-	text-align: center;
-	line-height: 2;
-	margin: 1rem 0 0 0;
-}
+
 
 .content {
 	position: relative;
@@ -185,10 +181,6 @@ main {
 
 .content--switch {
 	padding: 2.5rem 1rem;
-}
-
-.demo--current {
-	opacity: 0.5;
 }
 
 @media screen and (min-width: 55em) {
@@ -236,19 +228,5 @@ main {
 
 	.content--fixed a {
 		pointer-events: auto;
-	}
-
-	.demos {
-		grid-area: demos;
-		align-self: end;
-		justify-self: end;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		margin: 0;
-	}
-
-	.demo:nth-child(2) {
-		margin: 0 3rem 0 1.5rem;
 	}
 }
