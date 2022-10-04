@@ -305,8 +305,26 @@
   }
   
   .random-stuff-container-items img {
-	border-radius: 4px;
-	box-shadow: 0 25px 20px #030303;
+	border-radius: 5px;
+	box-shadow: 0 20px 25px #000;
+    transition: all 0.3s ease-in-out;
+  }
+  .random-stuff-container-items img::after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	opacity: 1;
+	border-radius: 5px;
+	box-shadow: 0 20px 25px #030303;
+	transition: opacity 0.3s ease-in-out;
+  }
+  
+  .random-stuff-container-items img:hover {
+	-webkit-transform: scale(1.25, 1.25);
+	transform: scale(1.25, 1.25); 
+  }
+  .random-stuff-container-items img:hover::after {
+	opacity: 1;
   }
   @media screen and (min-width: 55em) {
     .random-stuff-container{
