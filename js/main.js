@@ -8,7 +8,7 @@
 	// 	document.getElementsByClassName("home")[0].style.fontFamily = fontType[fontNum];
 	// }
 	function setRandomPhoto() {
-		let num = Math.floor(Math.random() * 10) + 1;
+		let num = Math.floor(Math.random() * 15) + 1;
 		document.getElementById("propic").src = `./img/face${num}.jpeg`;
 	}
 }
